@@ -3,6 +3,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+#TODO указывам пути
 urlpatterns = [
     path('cart/', include('cart.urls', namespace='cart')),
     path('admin/', admin.site.urls),

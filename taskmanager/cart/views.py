@@ -4,6 +4,7 @@ from shop.models import Product
 from .cart import Cart
 from .forms import CartAddProductForm
 
+#TODO создаем функцию  на карту
 
 @require_POST
 def cart_add(request, product_id):

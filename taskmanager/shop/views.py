@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Category, Product
 from cart.forms import CartAddProductForm
 
-"""Отображает список продуктов"""
+#TODO Отображает список продуктов"""
 def product_list(request, category_slug=None):
     category = None
     categories = Category.objects.all()
@@ -18,7 +18,7 @@ def product_list(request, category_slug=None):
                   })
 
 
-"""Отображение в отдельном окне для подробного ознакомления с товаром"""
+# TODO Отображение в отдельном окне для подробного ознакомления с товаром"""
 def product_detail(request, id, slug):
     product = get_object_or_404(Product, id=id, slug=slug, available=True)
     cart_product_form = CartAddProductForm()

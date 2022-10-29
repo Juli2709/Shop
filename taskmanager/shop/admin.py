@@ -4,6 +4,8 @@ from django.utils.safestring import mark_safe
 
 from .models import Category, Product
 
+#TODO оформляем админку
+
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'slug'] # поля в админке

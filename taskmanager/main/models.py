@@ -1,5 +1,6 @@
 from django.db import models
 
+#TODO создаем табличку для отзывов
 
 class Task(models.Model):
     title = models.CharField("Название", max_length=50)
