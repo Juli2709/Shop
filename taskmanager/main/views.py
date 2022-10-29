@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Task
 from .forms import TaskForm
 
-#TODO отображает список отзывов
+ #TODO отображает список отзывов
 
 def index(request):
     tasks = Task.objects.all()
