@@ -19,6 +19,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CART_SESSION_ID = 'cart'
 
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 2525 #465
+EMAIL_HOST_USER = 'migay.yulya@bk.ru'
+EMAIL_HOST_PASSWORD = '6AxtFFZyNG7aMuydgNNL'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSl = False
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -40,10 +47,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'user',
     'main',
     'shop',
     'cart',
-    #'users',
+
     #'rest_framework',
 ]
 
@@ -132,4 +140,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-#AUTH_USER_MODEL = 'users.User'  # TODO register user
+#AUTH_USER_MODEL = 'users.User'  # TODO registe user

@@ -5,13 +5,12 @@ from django.conf.urls.static import static
 
 #TODO указывам пути
 urlpatterns = [
-    path('cart/', include('cart.urls', namespace='cart')),
+
     path('admin/', admin.site.urls),
+    path('user/', include('user.urls')),
+    path('cart/', include('cart.urls', namespace='cart')),
     path('main/', include('main.urls')),
     path('', include('shop.urls', namespace='shop')),
-
-
-    #path('user/', include('users.urls'))
 
 ]
 

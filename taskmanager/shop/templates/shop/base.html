@@ -10,7 +10,12 @@
 <div id="header">
     <a href="/" class="logo">Магазин</a>
     <a class="py-2 d-none d-md-inline-block" href="{% url 'create' %}">Оставить отзыв</a>
+
+
+            <a class="me-3 py-2 text-dark text-decoration-none" <a href="{% url 'registers' %}">Registera</a> | <a href="{% url 'login' %}">Login</a>
+
 </div>
+
 <div id="subheader">
     <div class="cart">
         {% with total_items=cart|length %}
